@@ -1,94 +1,143 @@
 function oneThroughTwenty() {
-    
-   /* Your code goes below
-   Write a for or a while loop
-   return the result*/
-    
+  let Numbers = []  
+  
+  for (let counter = 1; counter <= 20; counter++){
+    Numbers.push(counter)
+  }
+    return Numbers;
 }
 
-//call function oneThroughTwenty
+console.log(oneThroughTwenty())
+
+
 
 function evensToTwenty() {
     
-   /* Your code goes below
-   Write a for or a while loop
-   return the result */
-  
+  let Numbers = []
+
+  for (let counter = 1; counter <= 20; counter++ ){
+    if (counter % 2 == 0) {
+      Numbers.push(counter)
+    }
+  }
+  return Numbers
 }
 
-//call function evensToTwenty
+ console.log(evensToTwenty())
 
 function oddsToTwenty() {
     
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let Numbers = []
+
+  for (let counter = 1; counter <= 20; counter++ ){
+    if (counter % 2 != 0) {
+      Numbers.push(counter)
+    }
+  }
+  return Numbers
    
 }
 
-//call function oddsToTwenty
+console.log(oddsToTwenty())
+
+
 
 function multiplesOfFive() {
     
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let NumbersMultiplesOfFive = []
 
+  for (let counter = 0 ; counter <= 100; counter+= 5){
+   NumbersMultiplesOfFive.push(counter)
+  }
+return NumbersMultiplesOfFive
 }
 
-//call function multiplesOfFive
+console.log(multiplesOfFive())
+
+
 
 function squareNumbers() {
-    
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
-    
+  let quadradosPerfeitos = []
+
+  for(let counter = 0;counter <= 100;counter++){
+    if (Number.isInteger(Math.sqrt(counter)) ){
+      quadradosPerfeitos.push(counter)
+    }
+  }
+    return quadradosPerfeitos
 }
 
-//call function squareNumbers
+console.log(squareNumbers())
+
+
 
 function countingBackwards() {
     
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let ContandoAoContrario = []
+  for (let counter = 20; counter >= 1; counter--){
+    ContandoAoContrario.push(counter)
+  }
+  return ContandoAoContrario
 }
 
-//call function countingBackwards
+
+console.log(countingBackwards())
+
 
 function evenNumbersBackwards() {
     
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
-}
+let ChamandoParesDeTrasParaFrente = []
 
-//call function evenNumbersBackwards
+for (let counter = 20; counter >= 1 ; counter --){
+  if ( counter % 2 == 0 ){
+    ChamandoParesDeTrasParaFrente.push(counter)
+  }
+}
+return ChamandoParesDeTrasParaFrente
+}
+console.log(evenNumbersBackwards())
+
+
 
 function oddNumbersBackwards() {
     
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let ChamandoimparesDeTrasParaFrente = []
+
+  for (let counter = 20; counter >= 1 ; counter --){
+    if ( counter % 2 != 0 ){
+      ChamandoimparesDeTrasParaFrente.push(counter)
+    }
+  }
+  return ChamandoimparesDeTrasParaFrente
 }
 
-//call function oddNumbersBackwards
+console.log(oddNumbersBackwards())
 
 function multiplesOfFiveBackwards() {
-    
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+
+  let MultiplosDe5AoContrario = []
+
+  for (let counter = 100; counter >= 0; counter -= 5){
+    MultiplosDe5AoContrario.push(counter)
+  }
+return MultiplosDe5AoContrario
 }
 
-//call function multiplesOfFiveBackwards
+console.log (multiplesOfFiveBackwards())
 
-function squareNumbersBackwards() {
-    
-   /* Your code goes below
-  Write a for or a while loop
-  return the result */
+
+
+function squareNumbersBackwards(){
+
+let quadradosPerfeitosAoContrario = []
+
+for (let counter = 100; counter >= 0; counter--){
+  if(Number.isInteger(Math.sqrt(counter))){
+    quadradosPerfeitosAoContrario.push(counter)
+
+  }
+}
+return quadradosPerfeitosAoContrario
 }
 
-//call function squareNumbersBackwards
+console.log(squareNumbersBackwards())
