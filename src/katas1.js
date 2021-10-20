@@ -6,10 +6,7 @@ function oneThroughTwenty() {
   }
     return Numbers;
 }
-
 console.log(oneThroughTwenty())
-
-
 
 function evensToTwenty() {
     
@@ -22,7 +19,6 @@ function evensToTwenty() {
   }
   return Numbers
 }
-
  console.log(evensToTwenty())
 
 function oddsToTwenty() {
@@ -37,39 +33,32 @@ function oddsToTwenty() {
   return Numbers
    
 }
-
 console.log(oddsToTwenty())
-
-
 
 function multiplesOfFive() {
     
   let NumbersMultiplesOfFive = []
 
-  for (let counter = 0 ; counter <= 100; counter+= 5){
-   NumbersMultiplesOfFive.push(counter)
+  for (let counter = 1 ; counter <= 100; counter++){
+   if (Number.isInteger(counter / 5)){
+     NumbersMultiplesOfFive.push(counter)
+   }
   }
 return NumbersMultiplesOfFive
 }
-
 console.log(multiplesOfFive())
-
-
 
 function squareNumbers() {
   let quadradosPerfeitos = []
 
-  for(let counter = 0;counter <= 100;counter++){
+  for(let counter = 1;counter <= 100;counter++){
     if (Number.isInteger(Math.sqrt(counter)) ){
       quadradosPerfeitos.push(counter)
     }
   }
     return quadradosPerfeitos
 }
-
 console.log(squareNumbers())
-
-
 
 function countingBackwards() {
     
@@ -79,10 +68,7 @@ function countingBackwards() {
   }
   return ContandoAoContrario
 }
-
-
 console.log(countingBackwards())
-
 
 function evenNumbersBackwards() {
     
@@ -97,8 +83,6 @@ return ChamandoParesDeTrasParaFrente
 }
 console.log(evenNumbersBackwards())
 
-
-
 function oddNumbersBackwards() {
     
   let ChamandoimparesDeTrasParaFrente = []
@@ -110,28 +94,25 @@ function oddNumbersBackwards() {
   }
   return ChamandoimparesDeTrasParaFrente
 }
-
 console.log(oddNumbersBackwards())
 
 function multiplesOfFiveBackwards() {
 
   let MultiplosDe5AoContrario = []
 
-  for (let counter = 100; counter >= 0; counter -= 5){
-    MultiplosDe5AoContrario.push(counter)
+  for (let counter = 100; counter >= 1; counter--){
+    if(Number.isInteger(counter / 5)){
+      MultiplosDe5AoContrario.push(counter)}
   }
 return MultiplosDe5AoContrario
 }
-
 console.log (multiplesOfFiveBackwards())
-
-
 
 function squareNumbersBackwards(){
 
 let quadradosPerfeitosAoContrario = []
 
-for (let counter = 100; counter >= 0; counter--){
+for (let counter = 100; counter >= 1; counter--){
   if(Number.isInteger(Math.sqrt(counter))){
     quadradosPerfeitosAoContrario.push(counter)
 
